@@ -20,6 +20,7 @@ export default function AlertMsg() {
   return (
     <div>
       <Snackbar
+        className="alert-msg"
         open={openAlertMsg}
         autoHideDuration={2000}
         onClose={handleClose}

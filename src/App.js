@@ -24,7 +24,7 @@ function App() {
       <Container
         maxWidth="md"
         sx={{
-          height: "100vh",
+          height: "100vh"
         }}
       >
         <div

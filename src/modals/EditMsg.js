@@ -50,7 +50,7 @@ export default function EditMsg() {
         <DialogTitle color="primary" sx={{ fontWeight: "normal" }}>
           تعديل المهمة
         </DialogTitle>
-        <DialogContent sx={{ width: "600px" }}>
+        <DialogContent >
           <form onSubmit={handleSubmit} id="edit-form">
             <TextField
               sx={{ fontWeight: "normal" }}

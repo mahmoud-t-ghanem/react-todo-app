@@ -87,10 +87,9 @@ h1 {
 }
 
 .tasks {
-  max-height: 50vh;
+  max-height: 30vh;
   overflow-y: auto;
   padding-left: 20px;
-  /* padding-bottom: 20px; */
 }
 .tasks::-webkit-scrollbar {
   background-color: #ddd;
@@ -190,4 +189,9 @@ label {
 .no-tasks-found-msg {
   font-family: Alexandria;
   font-weight: normal !important;
+}
+
+.alert-msg {
+  direction: ltr !important;
+  right: unset !important;
 }
