@@ -7,9 +7,14 @@
   .not-tab-focus {
     height: 100%;
   }
-  .tasks {
-    display: grid;
-    grid-template-rows: 1fr;
+  .content {
+    font-size: 14px;
+  }
+  .task {
+    padding: 20px 10px !important;
+  }
+  .task:hover {
+    padding: 30px 10px !important;
   }
 }
 
@@ -108,17 +113,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 15px;
   transition: 0.5s;
   border-radius: 10px;
 }
 .task:hover {
-  padding: 30px 20px;
+  padding: 30px 15px;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4) !important;
 }
 
 .content {
-  word-break: break-all;
+  white-space: normal;
+  word-break: break-word;
 }
 .task h1,
 .task p {

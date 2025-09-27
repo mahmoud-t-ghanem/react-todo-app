@@ -71,7 +71,7 @@ export default function IconsGroup({ task }) {
             width: "40px",
             height: "40px",
             padding: "7px",
-            marginLeft: "5px",
+            marginRight: "5px",
           }}
           onClick={(event) => {
             handleDoneClick(event);
@@ -92,7 +92,7 @@ export default function IconsGroup({ task }) {
             width: "40px",
             height: "40px",
             padding: "7px",
-            marginLeft: "5px",
+            marginRight: "5px",
             cursor: "pointer",
           }}
           onClick={handleSetOpenEditMsg}
@@ -111,7 +111,7 @@ export default function IconsGroup({ task }) {
             width: "40px",
             height: "40px",
             padding: "7px",
-            marginLeft: "5px",
+            marginRight: "5px",
             cursor: "pointer",
           }}
           onClick={handleSetOpenDeleteMsg}
