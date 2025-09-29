@@ -60,7 +60,6 @@ export default function TodoListTabs({ url }) {
         "& > *": {
           m: 1,
         },
-        margin: "20px",
         direction: "ltr",
       }}
     >

@@ -7,29 +7,17 @@
   .not-tab-focus {
     height: 100%;
   }
-  .content {
-    font-size: 14px;
-  }
-  .task {
-    padding: 20px 10px !important;
-  }
-  .task:hover {
-    padding: 30px 10px !important;
-  }
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+  font-size: clamp(15px, 2vw, 20px) !important;
 }
 
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-}
-
-h1 {
-  font-weight: normal;
 }
 
 /* font : */
@@ -60,47 +48,50 @@ body {
   direction: rtl;
 }
 
-div {
-  text-align: center;
+/* Container : */
+.MuiContainer-root {
+  height: 100vh !important;
+  width: 100vw !important;
+  max-width: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 h1,
 p {
-  text-align: start;
-}
-
-h1 {
-  margin-bottom: 5px;
+  font-size: unset;
+  font-weight: normal;
 }
 
 .todo-list {
   background-color: var(--secondary);
   border-radius: 10px;
-  padding: 20px;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 10fr 1fr;
+  row-gap: 4%;
 }
 
 .todo-list-title {
   font-family: Alexandria;
   font-weight: bold !important;
   text-align: center !important;
-}
-
-.todo-list-tabs {
-  padding: 10px;
-  display: flex !important;
-  justify-content: center !important;
+  margin-bottom: 5px;
+  font-size: 3rem !important;
 }
 
 .tasks {
-  max-height: 30vh;
   overflow-y: auto;
-  padding-left: 20px;
+  padding-left: 2%;
 }
 .tasks::-webkit-scrollbar {
   background-color: #ddd;
   border-radius: 10px;
   width: 8px;
   height: 8px;
+  scroll-behavior: smooth;
 }
 .tasks::-webkit-scrollbar-thumb {
   background-color: #8bc34a;
@@ -109,19 +100,18 @@ h1 {
 }
 
 .task {
-  margin-bottom: 30px;
+  margin-bottom: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 15px;
+  padding: 2.5% 1.5%;
   transition: 0.5s;
   border-radius: 10px;
 }
 .task:hover {
-  padding: 30px 15px;
+  padding: 3.5% 1.5%;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4) !important;
 }
-
 .content {
   white-space: normal;
   word-break: break-word;
@@ -129,45 +119,46 @@ h1 {
 .task h1,
 .task p {
   font-family: Alexandria;
+  text-align: start;
+}
+.task h1 {
+  font-size: 1.6rem !important;
+  font-weight: bold !important;
+}
+.task p {
+  font-size: 1rem !important;
   font-weight: normal !important;
 }
 
 .icons-group {
   display: flex;
 }
-
+.checked,
+.not-checked,
+.edit,
+.delete {
+  width: clamp(33px, 5vw, 45px) !important;
+  height: clamp(33px, 5vw, 45px) !important;
+  padding: 4% !important;
+  margin-right: clamp(3px, 1vw, 7px);
+}
 .not-checked,
 .edit,
 .delete {
   transition: 0.3s !important;
 }
-
 .not-checked:hover,
 .edit:hover,
 .delete:hover {
   background-color: rgba(255, 255, 255, 0.7) !important;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4) !important;
 }
-
-.add-task {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-::selection {
-  background-color: #8bc34a;
-  color: var(--secondary);
-}
-
 .not-checked {
   background-color: var(--secondary) !important;
   color: #689f38 !important;
   border: 3px solid #689f38 !important;
   cursor: pointer !important;
 }
-
 .checked {
   background-color: #689f38 !important;
   color: var(--secondary) !important;
@@ -175,29 +166,45 @@ h1 {
   cursor: default !important;
 }
 
+.add-task {
+  display: grid;
+  grid-template-columns: 79% 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-button {
+  font-weight: bold !important;
+}
+label {
+  font-weight: 200 !important;
+}
+
+.MuiButtonGroup-root {
+  margin: 0px !important;
+}
 .tab-focus {
   background-color: #618833 !important;
 }
-
 .tab-focus,
 .not-tab-focus {
   font-weight: bold !important;
 }
 
-.add-button {
-  font-weight: bold !important;
-}
-
-label {
-  font-weight: 200 !important;
-}
-
 .no-tasks-found-msg {
   font-family: Alexandria;
-  font-weight: normal !important;
+  font-weight: bold !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .alert-msg {
   direction: ltr !important;
   right: unset !important;
+}
+
+::selection {
+  background-color: #8bc34a;
+  color: var(--secondary);
 }

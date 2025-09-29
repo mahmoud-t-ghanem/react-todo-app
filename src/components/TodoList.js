@@ -75,17 +75,18 @@ export default function TodoList() {
       }}
     >
       <>
-        <div className="todo-list" style={{ width: "100%" }}>
-          <h1
-            className="todo-list-title"
-            style={{
-              color: theme.palette.primary.main,
-              fontSize: "40px",
-            }}
-          >
-            مهامي
-          </h1>
-          <Divider />
+        <div className="todo-list">
+          <div className="full-todo-list-title">
+            <h1
+              className="todo-list-title"
+              style={{
+                color: theme.palette.primary.main,
+              }}
+            >
+              مهامي
+            </h1>
+            <Divider />
+          </div>
           <TodoListTabs url={url} />
           <Routes>
             <Route path="/all-tasks" element={<Tasks />} />
@@ -94,10 +95,10 @@ export default function TodoList() {
             <Route path="/not-ended-tasks" element={<NotEndedTasks />} />
           </Routes>
           <AddTask />
-          <DeleteMsg />
-          <EditMsg />
-          <AlertMsg />
         </div>
+        <DeleteMsg />
+        <EditMsg />
+        <AlertMsg />
       </>
     </tasksContext.Provider>
   );

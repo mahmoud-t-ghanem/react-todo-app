@@ -55,8 +55,6 @@ export default function Task() {
           className="no-tasks-found-msg"
           style={{
             color: theme.palette.primary.main,
-            margin: "20px",
-            fontWeight: "bold",
           }}
         >
           لا يوجد أي مهام لعرضها.

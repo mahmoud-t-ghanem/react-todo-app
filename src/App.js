@@ -21,12 +21,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container
-        maxWidth="md"
-        sx={{
-          height: "100vh"
-        }}
-      >
+      <Container maxWidth="md">
         <div
           className="App"
           style={{

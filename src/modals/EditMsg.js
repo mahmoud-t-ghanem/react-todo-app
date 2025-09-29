@@ -47,7 +47,7 @@ export default function EditMsg() {
   return (
     <React.Fragment>
       <Dialog open={openEditMsg} onClose={handleClose}>
-        <DialogTitle color="primary" sx={{ fontWeight: "normal" }}>
+        <DialogTitle color="primary" sx={{ fontWeight: "normal",textAlign: "center" }}>
           تعديل المهمة
         </DialogTitle>
         <DialogContent >

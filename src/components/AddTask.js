@@ -37,7 +37,7 @@ export default function AddTask() {
         id="outlined-basic"
         label="عنوان المهمة"
         variant="outlined"
-        sx={{ width: "calc(80% - 5px)", fontWeight: "normal" }}
+        sx={{ fontWeight: "normal" }}
         value={addTasksValue}
         onChange={(event) => {
           setAddTaskValue(event.target.value);
@@ -47,7 +47,11 @@ export default function AddTask() {
 
       <Button
         variant="contained"
-        sx={{ color: "#ffffff", width: "calc(20% - 5px)", padding: "15px" }}
+        sx={{
+          color: "#ffffff",
+          padding: "17px",
+          borderRadius: "10px",
+        }}
         onClick={handleAddClick}
         className="add-button"
         disabled={addTasksValue === "" ? true : false}

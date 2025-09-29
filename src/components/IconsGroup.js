@@ -66,12 +66,7 @@ export default function IconsGroup({ task }) {
         <DoneIcon
           className={task.done === true ? "checked" : "not-checked"}
           style={{
-            fontSize: "10px",
             borderRadius: "50%",
-            width: "40px",
-            height: "40px",
-            padding: "7px",
-            marginRight: "5px",
           }}
           onClick={(event) => {
             handleDoneClick(event);
@@ -85,14 +80,9 @@ export default function IconsGroup({ task }) {
           color="primary"
           style={{
             color: "#ffeb3b",
-            fontSize: "10px",
             backgroundColor: "#ffffff",
             border: "3px solid #ffeb3b",
             borderRadius: "50%",
-            width: "40px",
-            height: "40px",
-            padding: "7px",
-            marginRight: "5px",
             cursor: "pointer",
           }}
           onClick={handleSetOpenEditMsg}
@@ -104,14 +94,9 @@ export default function IconsGroup({ task }) {
           className="delete"
           style={{
             color: "#f44336",
-            fontSize: "10px",
             backgroundColor: "#ffffff",
             border: "3px solid #f44336",
             borderRadius: "50%",
-            width: "40px",
-            height: "40px",
-            padding: "7px",
-            marginRight: "5px",
             cursor: "pointer",
           }}
           onClick={handleSetOpenDeleteMsg}
