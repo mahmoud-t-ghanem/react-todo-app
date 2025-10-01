@@ -130,6 +130,17 @@ p {
   font-weight: normal !important;
 }
 
+@media (max-width: 700px) {
+  .task h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .task h1 {
+    font-size: 1.2rem !important;
+  }
+}
+
 .icons-group {
   display: flex;
 }
