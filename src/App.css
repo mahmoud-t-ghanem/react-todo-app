@@ -51,6 +51,7 @@ body {
 /* Container : */
 .MuiContainer-root {
   height: 100vh !important;
+  height: 100svh !important;
   width: 100vw !important;
   max-width: none !important;
   padding: 0px !important;
