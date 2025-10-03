@@ -81,7 +81,7 @@ export default function IconsGroup({ task }) {
           style={{
             color: "#ffeb3b",
             backgroundColor: "#ffffff",
-            border: "3px solid #ffeb3b",
+            border: "2px solid #ffeb3b",
             borderRadius: "50%",
             cursor: "pointer",
           }}
@@ -95,7 +95,7 @@ export default function IconsGroup({ task }) {
           style={{
             color: "#f44336",
             backgroundColor: "#ffffff",
-            border: "3px solid #f44336",
+            border: "2px solid #f44336",
             borderRadius: "50%",
             cursor: "pointer",
           }}

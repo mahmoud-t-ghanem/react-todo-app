@@ -168,13 +168,13 @@ p {
 .not-checked {
   background-color: var(--secondary) !important;
   color: #689f38 !important;
-  border: 3px solid #689f38 !important;
+  border: 2px solid #689f38 !important;
   cursor: pointer !important;
 }
 .checked {
   background-color: #689f38 !important;
   color: var(--secondary) !important;
-  border: 3px solid var(--secondary) !important;
+  border: 2px solid var(--secondary) !important;
   cursor: default !important;
 }
 
@@ -187,6 +187,9 @@ p {
 .add-button {
   font-weight: bold !important;
 }
+.css-1prkojy-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 10px !important;
+}
 label {
   font-weight: 200 !important;
 }
@@ -194,12 +197,23 @@ label {
 .MuiButtonGroup-root {
   margin: 0px !important;
 }
+.css-1ftgdsu-MuiButtonGroup-root {
+  border-radius: 10px !important;
+}
 .tab-focus {
   background-color: #618833 !important;
 }
 .tab-focus,
 .not-tab-focus {
   font-weight: bold !important;
+}
+#not-ended-tasks {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+#all-tasks {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
 }
 
 .no-tasks-found-msg {
@@ -214,6 +228,17 @@ label {
 .alert-msg {
   direction: ltr !important;
   right: unset !important;
+  border-radius: 10px !important;
+  width: 40vw;
+}
+.MuiPaper-root {
+  border-radius: 10px !important;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .alert-msg {
+    width: 60vw;
+  }
 }
 
 ::selection {

@@ -18,6 +18,7 @@ export default function TodoListTabs({ url }) {
         className={
           focusTab === "not-ended-tasks" ? "tab-focus" : "not-tab-focus"
         }
+        id="not-ended-tasks"
       >
         المهام غير المنجزة
       </Button>
@@ -46,6 +47,7 @@ export default function TodoListTabs({ url }) {
             ? "tab-focus"
             : "not-tab-focus"
         }
+        id="all-tasks"
       >
         جميع المهام
       </Button>
