@@ -49,7 +49,7 @@ export default function AddTask() {
         variant="contained"
         sx={{
           color: "#ffffff",
-          padding: "17px",
+          padding: "16px",
           borderRadius: "10px",
         }}
         onClick={handleAddClick}
