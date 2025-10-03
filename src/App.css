@@ -187,7 +187,7 @@ p {
 .add-button {
   font-weight: bold !important;
 }
-.css-1prkojy-MuiInputBase-root-MuiOutlinedInput-root {
+.MuiInputBase-root {
   border-radius: 10px !important;
 }
 label {
@@ -196,8 +196,6 @@ label {
 
 .MuiButtonGroup-root {
   margin: 0px !important;
-}
-.css-1ftgdsu-MuiButtonGroup-root {
   border-radius: 10px !important;
 }
 .tab-focus {
